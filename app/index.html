@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <style>
+      .chatbox {
+        max-width: 720px;
+      }
+      .chatbox-threads-container {
+        overflow-y: auto;
+        height: 400px;
+
+      }
+      .chatbox-threads {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        min-height: 100%;
+      }
+      .chatbox-thread {
+        
+      }
+      .chatbox-input-container {
+        margin-top: 40px;
+        padding: 1em;
+        border: 2px solid black;
+      }
+      .user {
+        align-self: flex-end;
+      }
+      .bot {
+        align-self: flex-start;
+      }
+      .chatbox-input-cursor{
+        opacity: 1;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink{
+        0% { opacity:1; }
+        50% { opacity:0; }
+        100% { opacity:1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class='chatbox-container'>
+      <div class='chatbox'>
+        <div class='chatbox-threads-container'>
+          <div class='chatbox-threads'>
+
+          </div>
+        </div>
+        <div class='chatbox-input-container'>
+          <span class='chatbox-input'></span><span class='chatbox-input-cursor'>|</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
