@@ -1,0 +1,1 @@
+Simple chat simulator with no styling.
